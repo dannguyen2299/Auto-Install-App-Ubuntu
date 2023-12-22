@@ -44,6 +44,9 @@ echo "$PASSWORD" | sudo -S snap remove phpstorm
 echo "$PASSWORD" | sudo -S apt remove microsoft-edge-stable
 echo "$PASSWORD" | sudo -S apt remove microsoft-edge-dev
 
+# Uninstall PyCharm
+echo "$PASSWORD" | sudo -S snap remove pycharm-professional
+
 # Update and remove denpen
 echo "$PASSWORD" | sudo -S apt-get update
 echo "$PASSWORD" | sudo -S apt autoremove -y
