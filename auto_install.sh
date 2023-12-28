@@ -35,8 +35,10 @@ echo "$PASSWORD" | sudo -S apt install python3-xlib python3-cairo
 echo "$PASSWORD" | sudo -S snap install postman
 
 # Install smartgit 
-echo "$PASSWORD" | sudo -S add-apt-repository ppa:eugenesan/ppa
-echo "$PASSWORD" | sudo -S apt install smartgit
+#echo "$PASSWORD" | sudo -S add-apt-repository ppa:eugenesan/ppa
+#echo "$PASSWORD" | sudo -S apt install smartgit
+wget https://www.syntevo.com/downloads/smartgit/smartgit-23_1_1.deb
+echo "$PASSWORD" | sudo -S dpkg -i smartgit-23_1_1.deb
 
 # Install vscode 
 echo "$PASSWORD" | sudo -S snap install --classic code
